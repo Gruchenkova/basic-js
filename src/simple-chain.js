@@ -16,7 +16,7 @@ const chainMaker = {
     return this
   },
   removeLink(position) {
-    if (Number.isInteger(position)) {
+    if (!Number.isInteger(position)) {
       this.chain.splice(position - 1, 1)
       return this
     }
